@@ -24,3 +24,36 @@ const bigNumber = 648961649654649645n   //if we write n then it automatic consid
 console.log(typeof bigNumber);   //for finding datatype
 
 //the datatype of function is function object but mainally it writes function
+
+//memory are two types- stack heap
+
+//stack- primitive  and  heap- non primitive
+
+// when we declare variable or occur any change  in stack we find a copy but in heap we find reference of original value
+
+// in stack if we change in original value it is not change it gave a copy of new change and also get old original value
+
+
+let myYoutubeName = "ajaytiwarijayhind"
+let anotherName = myYoutubeName
+anotherName = "solidlearning"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+//we access the any property with dot. such as we access email of any user then we write user.email
+
+//now we declare a object for heap
+
+let userOne = {
+    email: "ajaytiwari@gmail.com"
+    upi: "fg@uty"
+}
+
+let userTwo = userOne
+userTwo.email= "gyani@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);  //here value change because heap change paramently bcz it direct reference
+
+
+
