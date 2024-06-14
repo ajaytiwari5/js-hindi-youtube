@@ -83,8 +83,37 @@ console.log(Object.entries(tinderUser));  //its make array each key with own val
 
 console.log(tinderUser.hasOwnProperty('mail'));  //we also use this syntax for asking these property existing
 
+//de structure in object
+
+const course = {
+    coursename: "hindi",
+    price: "999",
+    courseInstructor: "ajay"
+}
 
 
+const {courseInstructor: instructor} = course  //here we gave short name this is instructor
+//in upper we gave updated name of courseinstructor to instructor thai is called destructure
+//when we see {} then we understand it is destructuring
+
+console.log(courseInstructor);
+console.log(instructor);
+
+//APIs just like a menu of food you dont know how will food cooked etc you only eat same we use api without knowing its backend
+
+
+/* {
+     "name": "ajay",   //it is json not object
+     "coursename": "hindi",
+     "price": "free"
+ }
+*/     
+
+[
+    {},   //API also in array form here many objects
+    {},
+    {}
+]
 
 
 
